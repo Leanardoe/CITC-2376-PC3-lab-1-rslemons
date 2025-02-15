@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -77,7 +78,9 @@ fun ProfileCard(modifier: Modifier = Modifier) {
         Text(
             text = "Software Developer | Kotlin & Jetpack Compose Enthusiast",
             fontSize = 16.sp,
-            color = Color.DarkGray
+            color = Color.DarkGray,
+            modifier = Modifier.fillMaxWidth(),
+            textAlign = TextAlign.Center
         )
     }
 }
